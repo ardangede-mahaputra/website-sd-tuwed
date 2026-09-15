@@ -42,8 +42,8 @@
 <div id="admin">
 <div class="adminHead"><div class="container"><b>⚙️ EDIT WEBSITE SD NEGERI 2 TUWED</b><button class="editbtn" onclick="closeAdmin()">Tutup</button></div></div>
 <div class="container adminBody">
-<div class="notice"><b>Ini versi yang mudah diedit.</b> Isi formulir di bawah, klik <b>Simpan Perubahan</b>, lalu website langsung berubah. Data tersimpan di browser komputer ini.</div>
-<div class="adminActions"><button class="editbtn save" onclick="saveData()">💾 Simpan Perubahan</button><button class="editbtn secondary" onclick="exportBackup()">⬇️ Backup Data</button><label class="editbtn secondary" style="cursor:pointer">⬆️ Pulihkan Data <input id="importFile" type="file" accept=".json" style="display:none" onchange="importBackup(event)"></label><button class="editbtn secondary" onclick="resetData()">↺ Kembalikan Contoh</button></div>
+<div class="notice"><b>EDITOR MUDAH SD NEGERI 2 TUWED</b><br>Isi formulir di bawah. <b>Simpan Perubahan</b> akan menampilkan perubahan di komputer ini. Agar perubahan ikut tampil di website online, klik <b>📤 File untuk Publikasi</b>, lalu upload file <b>data-sekolah.json</b> yang terunduh ke repository GitHub (menggantikan file lama). Untuk foto/dokumen, upload file tersebut ke folder website melalui GitHub.</div>
+<div class="adminActions"><button class="editbtn save" onclick="saveData()">💾 Simpan Perubahan</button><button class="editbtn secondary" onclick="exportBackup()">⬇️ Backup Data</button><button class="editbtn secondary" onclick="downloadPublishFile()">📤 File untuk Publikasi</button><label class="editbtn secondary" style="cursor:pointer">⬆️ Pulihkan Data <input id="importFile" type="file" accept=".json" style="display:none" onchange="importBackup(event)"></label><button class="editbtn secondary" onclick="resetData()">↺ Kembalikan Contoh</button></div>
 
 <div class="adminGrid">
 <div class="panel"><h3>🏫 Data Sekolah</h3><label>Nama Sekolah</label><input id="f_name"><label>Tagline</label><input id="f_tagline"><label>Pengumuman atas</label><input id="f_announcement"><label>NPSN</label><input id="f_npsn"><label>Alamat singkat</label><input id="f_address"><label>Alamat lengkap</label><textarea id="f_fullAddress"></textarea><div class="row"><div><label>Email</label><input id="f_email"></div><div><label>Telepon</label><input id="f_phone"></div></div><label>Link Google Maps</label><input id="f_maps"></div>
@@ -57,7 +57,7 @@
 
 <div class="panel full"><h3>📰 Berita & Pengumuman</h3><div id="newsEdit"></div><button class="smallbtn add" onclick="addNews()">+ Tambah Berita</button></div>
 
-<div class="panel full"><h3>📸 Galeri</h3><p class="muted">Untuk foto lokal, masukkan nama file seperti <b>images/foto-kegiatan.jpg</b>. Letakkan file foto di folder website.</p><div id="galleryEdit"></div><button class="smallbtn add" onclick="addGallery()">+ Tambah Foto</button></div>
+<div class="panel full"><h3>📸 Galeri</h3><p class="muted">Masukkan nama file seperti <b>images/foto-kegiatan.jpg</b>. Setelah menambahkan foto di sini, foto tersebut juga harus di-upload ke folder <b>images</b> di GitHub. Format yang disarankan: JPG/PNG, ukuran maksimal sekitar 2–3 MB per foto.</p><div id="galleryEdit"></div><button class="smallbtn add" onclick="addGallery()">+ Tambah Foto</button></div>
 
 <div class="panel full"><h3>📄 Dokumen Download</h3><p class="muted">Masukkan lokasi PDF, contoh: <b>dokumen/profil.pdf</b>. Buat folder <b>dokumen</b> di dalam folder website.</p><div id="docsEdit"></div><button class="smallbtn add" onclick="addDoc()">+ Tambah Dokumen</button></div>
 </div>
@@ -80,6 +80,7 @@ docs:[["📋","Profil Sekolah","Tambahkan file PDF profil sekolah.","#"],["📦"
 };
 let data=load();
 function load(){try{return JSON.parse(localStorage.getItem("sdn2tuwed_data"))||structuredClone(DEFAULT)}catch(e){return structuredClone(DEFAULT)}}
+fetch("data-sekolah.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(remote=>{if(remote && !localStorage.getItem("sdn2tuwed_data")){data=remote;render();}}).catch(()=>{});
 function val(id){return document.getElementById(id).value}
 function set(id,v){document.getElementById(id).value=v??""}
 function initials(s){return s.split(" ").filter(Boolean).map(x=>x[0]).slice(0,2).join("").toUpperCase()}
@@ -123,6 +124,7 @@ data.docs=[...document.querySelectorAll("#docsEdit .listitem")].map(x=>[x.queryS
 function saveData(){collect();localStorage.setItem("sdn2tuwed_data",JSON.stringify(data));render();alert("Perubahan berhasil disimpan di browser ini.");}
 function addMission(){data.mission.push("Tulis misi baru");fillForm()}function addPerson(){data.people.push(["Nama baru","Jabatan"]);fillForm()}function addFacility(){data.facilities.push(["🏫","Fasilitas baru","Keterangan fasilitas"]);fillForm()}function addNews(){data.news.push(["Tanggal","Judul berita baru","Isi berita"]);fillForm()}function addGallery(){data.gallery.push(["images/foto-baru.jpg","Foto baru"]);fillForm()}function addDoc(){data.docs.push(["📄","Dokumen baru","Keterangan dokumen","#"]);fillForm()}
 function exportBackup(){collect();let b=new Blob([JSON.stringify(data,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="backup-data-sdn-2-tuwed.json";a.click()}
+function downloadPublishFile(){collect();let b=new Blob([JSON.stringify(data,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="data-sekolah.json";a.click();alert("File data-sekolah.json sudah diunduh. Upload file ini ke repository GitHub untuk menerbitkan perubahan ke website online.")}
 function importBackup(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{data=JSON.parse(r.result);fillForm();alert("Backup berhasil dipulihkan. Klik Simpan Perubahan.");}catch(err){alert("File backup tidak valid.")}};r.readAsText(f)}
 function resetData(){if(confirm("Kembalikan semua data ke contoh awal?")){data=structuredClone(DEFAULT);localStorage.removeItem("sdn2tuwed_data");fillForm();render()}}
 render();

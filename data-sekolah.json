@@ -1,0 +1,147 @@
+{
+  "name": "SD Negeri 2 Tuwed",
+  "tagline": "Sekolah Dasar Negeri 2 Tuwed",
+  "announcement": "Selamat datang di website SD Negeri 2 Tuwed.",
+  "npsn": "ISI NPSN SEKOLAH",
+  "address": "Tuwed, Kabupaten Jembrana, Bali",
+  "fullAddress": "ISI ALAMAT LENGKAP SEKOLAH",
+  "email": "ISI EMAIL SEKOLAH",
+  "phone": "ISI NOMOR TELEPON",
+  "maps": "https://maps.google.com/",
+  "profileTitle": "Sekolah yang tumbuh bersama masyarakat",
+  "profile": "SD Negeri 2 Tuwed berkomitmen memberikan layanan pendidikan yang berkualitas, membangun karakter peserta didik, serta mengembangkan potensi akademik dan nonakademik.",
+  "vision": "Terwujudnya peserta didik yang berkarakter, berprestasi, mandiri, sehat, dan peduli lingkungan.",
+  "mission": [
+    "Menyelenggarakan pembelajaran yang aktif, kreatif, efektif, dan menyenangkan.",
+    "Menanamkan karakter, disiplin, tanggung jawab, dan gotong royong.",
+    "Mengembangkan potensi akademik dan nonakademik peserta didik.",
+    "Menciptakan lingkungan sekolah yang aman, sehat, bersih, dan nyaman."
+  ],
+  "people": [
+    [
+      "Nama Kepala Sekolah",
+      "Kepala Sekolah"
+    ],
+    [
+      "Nama Guru 1",
+      "Guru Kelas"
+    ],
+    [
+      "Nama Guru 2",
+      "Guru Kelas"
+    ],
+    [
+      "Nama Guru 3",
+      "Guru Kelas"
+    ],
+    [
+      "Nama Guru 4",
+      "Guru Mata Pelajaran"
+    ],
+    [
+      "Nama Tendik",
+      "Tenaga Kependidikan"
+    ]
+  ],
+  "facilities": [
+    [
+      "🏫",
+      "Ruang Kelas",
+      "Ruang pembelajaran peserta didik."
+    ],
+    [
+      "📚",
+      "Perpustakaan",
+      "Ruang literasi dan sumber belajar."
+    ],
+    [
+      "💻",
+      "TIK & Komputer",
+      "Komputer, laptop, printer, dan jaringan."
+    ],
+    [
+      "⚽",
+      "Olahraga",
+      "Peralatan kegiatan olahraga."
+    ],
+    [
+      "🩺",
+      "UKS",
+      "Fasilitas pendukung kesehatan."
+    ],
+    [
+      "🪑",
+      "Perabot Sekolah",
+      "Meja, kursi, lemari, papan tulis, dan lainnya."
+    ]
+  ],
+  "inventory": [
+    [
+      "513",
+      "Total Barang"
+    ],
+    [
+      "476",
+      "Kondisi Baik"
+    ],
+    [
+      "37",
+      "Kurang Baik"
+    ],
+    [
+      "0",
+      "Rusak Berat"
+    ]
+  ],
+  "news": [
+    [
+      "Tanggal",
+      "Kegiatan Sekolah",
+      "Tuliskan berita kegiatan sekolah di sini."
+    ],
+    [
+      "Tanggal",
+      "Prestasi Peserta Didik",
+      "Tuliskan prestasi atau pencapaian peserta didik."
+    ],
+    [
+      "Tanggal",
+      "Pengumuman",
+      "Tuliskan pengumuman resmi sekolah."
+    ]
+  ],
+  "gallery": [
+    [
+      "images/foto-sekolah.jpg",
+      "SD Negeri 2 Tuwed"
+    ],
+    [
+      "images/foto-sekolah.jpg",
+      "Halaman Sekolah"
+    ],
+    [
+      "images/foto-sekolah.jpg",
+      "Kegiatan Sekolah"
+    ]
+  ],
+  "docs": [
+    [
+      "📋",
+      "Profil Sekolah",
+      "Tambahkan file PDF profil sekolah.",
+      "#"
+    ],
+    [
+      "📦",
+      "Rekap Inventaris",
+      "Tambahkan file rekap inventaris/KIB.",
+      "#"
+    ],
+    [
+      "📢",
+      "Pengumuman",
+      "Tambahkan surat atau pengumuman.",
+      "#"
+    ]
+  ]
+}
