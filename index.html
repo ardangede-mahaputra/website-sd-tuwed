@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SD Negeri 2 Tuwed</title>
+<style>
+:root{--g:#08764f;--d:#063f2e;--gold:#f2b705;--bg:#f5f8f6;--ink:#18352c;--muted:#687a73;--line:#dce7e1}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+.container{width:min(1150px,92%);margin:auto}.top{background:var(--d);color:#fff;padding:8px;text-align:center}.header{background:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line)}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit}.logo{width:48px;height:48px;border-radius:12px;background:var(--g);color:#fff;display:grid;place-items:center;font-weight:900}.brand small{display:block;color:var(--muted);font-size:.75rem}nav{display:flex;gap:4px;flex-wrap:wrap}nav a,.editbtn{padding:9px 11px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.86rem}nav a:hover{background:#eaf5f0}.editbtn{border:0;background:var(--gold);cursor:pointer;color:#222}.hero{background:linear-gradient(120deg,#08764f,#159b6c);color:#fff;padding:70px 0}.heroGrid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.hero h1{font-size:clamp(2.1rem,5vw,4rem);line-height:1.05;margin:12px 0}.hero p{font-size:1.1rem}.hero img{width:100%;height:330px;object-fit:cover;border-radius:24px;box-shadow:0 20px 55px #0003}.btn{display:inline-block;padding:12px 18px;border-radius:10px;background:var(--gold);color:#222;text-decoration:none;font-weight:800;margin:10px 8px 0 0}.section{padding:70px 0}.alt{background:#eaf4ef}.eyebrow{font-size:.75rem;letter-spacing:.12em;font-weight:900;color:var(--g)}h2{font-size:2rem;margin:7px 0 18px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:50px}.card,.person,.news,.facility,.doc,.vision{background:#fff;border:1px solid var(--line);border-radius:17px;padding:22px}.facts{border-top:1px solid var(--line);margin-top:22px}.fact{display:flex;justify-content:space-between;gap:20px;padding:10px 0;border-bottom:1px solid var(--line)}.fact span{color:var(--muted);text-align:right}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.people{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.avatar{width:55px;height:55px;border-radius:50%;background:#e1f1e9;color:var(--g);display:grid;place-items:center;font-weight:900}.muted{color:var(--muted)}.inventory{background:#fff;border:1px solid var(--line);padding:22px;border-radius:17px;margin-top:25px}.invgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.inv{background:#f0f6f2;padding:15px;border-radius:10px;text-align:center}.inv b{display:block;font-size:1.5rem;color:var(--g)}.newsgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.gallery figure{margin:0;aspect-ratio:4/3;overflow:hidden;border-radius:17px;position:relative}.gallery img{width:100%;height:100%;object-fit:cover}.caption{position:absolute;bottom:0;left:0;right:0;color:#fff;padding:35px 14px 12px;background:linear-gradient(transparent,#000b);font-weight:800}.docs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.contact{background:var(--d);color:#fff;padding:70px 0}.contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:40px}.map{background:#fff;color:var(--ink);border-radius:18px;padding:30px;text-align:center}footer{background:#042d22;color:#d7eee5;padding:25px}.footer{display:flex;justify-content:space-between}
+#admin{display:none;background:#fff;position:fixed;inset:0;z-index:100;overflow:auto}.adminHead{background:var(--d);color:#fff;padding:16px;position:sticky;top:0;z-index:2}.adminHead .container{display:flex;justify-content:space-between;align-items:center}.adminBody{padding:25px 0}.adminGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{border:1px solid var(--line);border-radius:15px;padding:20px;background:#fafcfb}.panel.full{grid-column:1/-1}label{display:block;font-weight:700;margin:9px 0 5px}input,textarea,select{width:100%;padding:10px;border:1px solid #cbd9d2;border-radius:8px;font:inherit}textarea{min-height:85px}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.listitem{border:1px solid var(--line);padding:12px;border-radius:10px;margin:10px 0;background:#fff}.smallbtn{border:0;padding:7px 10px;border-radius:7px;cursor:pointer}.add{background:#dff1e8;color:var(--g)}.remove{background:#ffe5e5;color:#9b1c1c;float:right}.save{background:var(--gold);font-weight:900}.secondary{background:#e9efec}.adminActions{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.notice{background:#fff7d7;border-left:4px solid var(--gold);padding:12px;margin-bottom:18px}
+@media(max-width:850px){nav{display:none}.heroGrid,.grid2,.contactGrid,.adminGrid{grid-template-columns:1fr}.cards,.people,.newsgrid,.gallery,.docs{grid-template-columns:1fr 1fr}.invgrid{grid-template-columns:1fr 1fr}.hero img{height:250px}.footer{display:block}}
+@media(max-width:560px){.cards,.people,.newsgrid,.gallery,.docs{grid-template-columns:1fr}.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top" id="topAnnouncement">Selamat datang di website SD Negeri 2 Tuwed</div>
+<header class="header"><div class="container nav">
+<a class="brand" href="#beranda"><div class="logo">SD<br>2</div><div><b id="navName">SD Negeri 2 Tuwed</b><small id="navTag">Sekolah Dasar Negeri 2 Tuwed</small></div></a>
+<nav><a href="#beranda">Beranda</a><a href="#profil">Profil</a><a href="#guru">Guru</a><a href="#fasilitas">Fasilitas</a><a href="#berita">Berita</a><a href="#galeri">Galeri</a><a href="#dokumen">Dokumen</a><a href="#kontak">Kontak</a></nav>
+<button class="editbtn" onclick="openAdmin()">✏️ Edit Website</button></div></header>
+
+<main id="site">
+<section id="beranda" class="hero"><div class="container heroGrid"><div><span>WEBSITE RESMI SEKOLAH</span><h1 id="heroTitle">Selamat Datang di SD Negeri 2 Tuwed</h1><p id="heroDesc"></p><a class="btn" href="#profil">Profil Sekolah</a><a class="btn" href="#berita">Berita</a></div><div><img id="heroImage" src="images/foto-sekolah.jpg" alt="SD Negeri 2 Tuwed"></div></div></section>
+
+<section id="profil" class="section"><div class="container grid2"><div><span class="eyebrow">PROFIL SEKOLAH</span><h2 id="profileTitle"></h2><p id="profileText"></p><div class="facts" id="facts"></div></div><div class="vision"><span class="eyebrow">VISI & MISI</span><h3>Visi</h3><p id="vision"></p><h3>Misi</h3><ul id="mission"></ul></div></div></section>
+
+<section id="guru" class="section alt"><div class="container"><span class="eyebrow">SUMBER DAYA MANUSIA</span><h2>Guru & Tenaga Kependidikan</h2><div class="people" id="people"></div></div></section>
+
+<section id="fasilitas" class="section"><div class="container"><span class="eyebrow">SARANA & PRASARANA</span><h2>Fasilitas Sekolah</h2><div class="cards" id="facilities"></div><div class="inventory"><h3>📦 Rekap Inventaris</h3><div class="invgrid" id="inventory"></div></div></div></section>
+
+<section id="berita" class="section alt"><div class="container"><span class="eyebrow">INFORMASI TERBARU</span><h2>Berita & Pengumuman</h2><div class="newsgrid" id="news"></div></div></section>
+
+<section id="galeri" class="section"><div class="container"><span class="eyebrow">DOKUMENTASI</span><h2>Galeri Sekolah</h2><div class="gallery" id="gallery"></div></div></section>
+
+<section id="dokumen" class="section alt"><div class="container"><span class="eyebrow">DOWNLOAD</span><h2>Dokumen Sekolah</h2><div class="docs" id="docs"></div></div></section>
+
+<section id="kontak" class="contact"><div class="container contactGrid"><div><span class="eyebrow">KONTAK</span><h2>Hubungi Sekolah</h2><div id="contacts"></div></div><div class="map"><div style="font-size:3rem">📍</div><h3>Lokasi SD Negeri 2 Tuwed</h3><p id="mapAddress"></p><a id="maps" class="btn" target="_blank">Buka Google Maps</a></div></div></section>
+</main>
+<footer><div class="container footer"><div><b id="footerName"></b><p>Website informasi sekolah.</p></div><div>© <span id="year"></span> SD Negeri 2 Tuwed</div></div></footer>
+
+<div id="admin">
+<div class="adminHead"><div class="container"><b>⚙️ EDIT WEBSITE SD NEGERI 2 TUWED</b><button class="editbtn" onclick="closeAdmin()">Tutup</button></div></div>
+<div class="container adminBody">
+<div class="notice"><b>Ini versi yang mudah diedit.</b> Isi formulir di bawah, klik <b>Simpan Perubahan</b>, lalu website langsung berubah. Data tersimpan di browser komputer ini.</div>
+<div class="adminActions"><button class="editbtn save" onclick="saveData()">💾 Simpan Perubahan</button><button class="editbtn secondary" onclick="exportBackup()">⬇️ Backup Data</button><label class="editbtn secondary" style="cursor:pointer">⬆️ Pulihkan Data <input id="importFile" type="file" accept=".json" style="display:none" onchange="importBackup(event)"></label><button class="editbtn secondary" onclick="resetData()">↺ Kembalikan Contoh</button></div>
+
+<div class="adminGrid">
+<div class="panel"><h3>🏫 Data Sekolah</h3><label>Nama Sekolah</label><input id="f_name"><label>Tagline</label><input id="f_tagline"><label>Pengumuman atas</label><input id="f_announcement"><label>NPSN</label><input id="f_npsn"><label>Alamat singkat</label><input id="f_address"><label>Alamat lengkap</label><textarea id="f_fullAddress"></textarea><div class="row"><div><label>Email</label><input id="f_email"></div><div><label>Telepon</label><input id="f_phone"></div></div><label>Link Google Maps</label><input id="f_maps"></div>
+
+<div class="panel"><h3>🎯 Profil & Visi Misi</h3><label>Judul profil</label><input id="f_profileTitle"><label>Deskripsi profil</label><textarea id="f_profile"></textarea><label>Visi</label><textarea id="f_vision"></textarea><label>Misi</label><div id="missionEdit"></div><button class="smallbtn add" onclick="addMission()">+ Tambah Misi</button></div>
+
+<div class="panel"><h3>👩‍🏫 Guru & Staf</h3><div id="peopleEdit"></div><button class="smallbtn add" onclick="addPerson()">+ Tambah Guru/Staf</button></div>
+<div class="panel"><h3>🏢 Fasilitas</h3><div id="facilityEdit"></div><button class="smallbtn add" onclick="addFacility()">+ Tambah Fasilitas</button></div>
+
+<div class="panel full"><h3>📦 Inventaris</h3><div class="row"><div><label>Total Barang</label><input id="i_total"></div><div><label>Kondisi Baik</label><input id="i_good"></div><div><label>Kurang Baik</label><input id="i_less"></div><div><label>Rusak Berat</label><input id="i_bad"></div></div></div>
+
+<div class="panel full"><h3>📰 Berita & Pengumuman</h3><div id="newsEdit"></div><button class="smallbtn add" onclick="addNews()">+ Tambah Berita</button></div>
+
+<div class="panel full"><h3>📸 Galeri</h3><p class="muted">Untuk foto lokal, masukkan nama file seperti <b>images/foto-kegiatan.jpg</b>. Letakkan file foto di folder website.</p><div id="galleryEdit"></div><button class="smallbtn add" onclick="addGallery()">+ Tambah Foto</button></div>
+
+<div class="panel full"><h3>📄 Dokumen Download</h3><p class="muted">Masukkan lokasi PDF, contoh: <b>dokumen/profil.pdf</b>. Buat folder <b>dokumen</b> di dalam folder website.</p><div id="docsEdit"></div><button class="smallbtn add" onclick="addDoc()">+ Tambah Dokumen</button></div>
+</div>
+<div class="adminActions"><button class="editbtn save" onclick="saveData();closeAdmin()">💾 Simpan & Lihat Website</button></div>
+</div></div>
+
+<script>
+const DEFAULT={
+name:"SD Negeri 2 Tuwed",tagline:"Sekolah Dasar Negeri 2 Tuwed",announcement:"Selamat datang di website SD Negeri 2 Tuwed.",
+npsn:"ISI NPSN SEKOLAH",address:"Tuwed, Kabupaten Jembrana, Bali",fullAddress:"ISI ALAMAT LENGKAP SEKOLAH",email:"ISI EMAIL SEKOLAH",phone:"ISI NOMOR TELEPON",maps:"https://maps.google.com/",
+profileTitle:"Sekolah yang tumbuh bersama masyarakat",profile:"SD Negeri 2 Tuwed berkomitmen memberikan layanan pendidikan yang berkualitas, membangun karakter peserta didik, serta mengembangkan potensi akademik dan nonakademik.",
+vision:"Terwujudnya peserta didik yang berkarakter, berprestasi, mandiri, sehat, dan peduli lingkungan.",
+mission:["Menyelenggarakan pembelajaran yang aktif, kreatif, efektif, dan menyenangkan.","Menanamkan karakter, disiplin, tanggung jawab, dan gotong royong.","Mengembangkan potensi akademik dan nonakademik peserta didik.","Menciptakan lingkungan sekolah yang aman, sehat, bersih, dan nyaman."],
+people:[["Nama Kepala Sekolah","Kepala Sekolah"],["Nama Guru 1","Guru Kelas"],["Nama Guru 2","Guru Kelas"],["Nama Guru 3","Guru Kelas"],["Nama Guru 4","Guru Mata Pelajaran"],["Nama Tendik","Tenaga Kependidikan"]],
+facilities:[["🏫","Ruang Kelas","Ruang pembelajaran peserta didik."],["📚","Perpustakaan","Ruang literasi dan sumber belajar."],["💻","TIK & Komputer","Komputer, laptop, printer, dan jaringan."],["⚽","Olahraga","Peralatan kegiatan olahraga."],["🩺","UKS","Fasilitas pendukung kesehatan."],["🪑","Perabot Sekolah","Meja, kursi, lemari, papan tulis, dan lainnya."]],
+inventory:[["513","Total Barang"],["476","Kondisi Baik"],["37","Kurang Baik"],["0","Rusak Berat"]],
+news:[["Tanggal","Kegiatan Sekolah","Tuliskan berita kegiatan sekolah di sini."],["Tanggal","Prestasi Peserta Didik","Tuliskan prestasi atau pencapaian peserta didik."],["Tanggal","Pengumuman","Tuliskan pengumuman resmi sekolah."]],
+gallery:[["images/foto-sekolah.jpg","SD Negeri 2 Tuwed"],["images/foto-sekolah.jpg","Halaman Sekolah"],["images/foto-sekolah.jpg","Kegiatan Sekolah"]],
+docs:[["📋","Profil Sekolah","Tambahkan file PDF profil sekolah.","#"],["📦","Rekap Inventaris","Tambahkan file rekap inventaris/KIB.","#"],["📢","Pengumuman","Tambahkan surat atau pengumuman.","#"]]
+};
+let data=load();
+function load(){try{return JSON.parse(localStorage.getItem("sdn2tuwed_data"))||structuredClone(DEFAULT)}catch(e){return structuredClone(DEFAULT)}}
+function val(id){return document.getElementById(id).value}
+function set(id,v){document.getElementById(id).value=v??""}
+function initials(s){return s.split(" ").filter(Boolean).map(x=>x[0]).slice(0,2).join("").toUpperCase()}
+function render(){
+document.title=data.name; $("topAnnouncement").textContent=data.announcement;$("navName").textContent=data.name;$("navTag").textContent=data.tagline;
+$("heroTitle").textContent="Selamat Datang di "+data.name;$("heroDesc").textContent=data.profile;$("profileTitle").textContent=data.profileTitle;$("profileText").textContent=data.profile;$("vision").textContent=data.vision;$("mapAddress").textContent=data.fullAddress;
+$("heroImage").src=data.gallery[0]?.[0]||"images/foto-sekolah.jpg";$("maps").href=data.maps;$("footerName").textContent=data.name;$("year").textContent=new Date().getFullYear();
+$("facts").innerHTML=[["NPSN",data.npsn],["Alamat",data.fullAddress],["Email",data.email],["Telepon",data.phone]].map(x=>`<div class="fact"><b>${x[0]}</b><span>${x[1]}</span></div>`).join("");
+$("mission").innerHTML=data.mission.map(x=>`<li>${x}</li>`).join("");
+$("people").innerHTML=data.people.map(x=>`<article class="person"><div class="avatar">${initials(x[0])}</div><h3>${x[0]}</h3><div class="muted">${x[1]}</div></article>`).join("");
+$("facilities").innerHTML=data.facilities.map(x=>`<article class="facility"><div style="font-size:2rem">${x[0]}</div><h3>${x[1]}</h3><p class="muted">${x[2]}</p></article>`).join("");
+$("inventory").innerHTML=data.inventory.map(x=>`<div class="inv"><b>${x[0]}</b><span>${x[1]}</span></div>`).join("");
+$("news").innerHTML=data.news.map(x=>`<article class="news"><div class="eyebrow">${x[0]}</div><h3>${x[1]}</h3><p class="muted">${x[2]}</p></article>`).join("");
+$("gallery").innerHTML=data.gallery.map(x=>`<figure><img src="${x[0]}" alt="${x[1]}"><figcaption class="caption">${x[1]}</figcaption></figure>`).join("");
+$("docs").innerHTML=data.docs.map(x=>`<article class="doc"><div style="font-size:2rem">${x[0]}</div><h3>${x[1]}</h3><p class="muted">${x[2]}</p><a class="btn" href="${x[3]}" target="_blank">Buka / Download</a></article>`).join("");
+$("contacts").innerHTML=`<p>📍 ${data.fullAddress}</p><p>✉️ ${data.email}</p><p>☎️ ${data.phone}</p>`;
+}
+function openAdmin(){document.getElementById("admin").style.display="block";document.body.style.overflow="hidden";fillForm()}
+function closeAdmin(){document.getElementById("admin").style.display="none";document.body.style.overflow="";render()}
+function fillForm(){
+["name","tagline","announcement","npsn","address","fullAddress","email","phone","maps","profileTitle","profile","vision"].forEach(k=>set("f_"+k,data[k]));
+set("i_total",data.inventory[0][0]);set("i_good",data.inventory[1][0]);set("i_less",data.inventory[2][0]);set("i_bad",data.inventory[3][0]);
+$("missionEdit").innerHTML=data.mission.map((x,i)=>`<div class="listitem"><button class="smallbtn remove" onclick="data.mission.splice(${i},1);fillForm()">Hapus</button><label>Misi ${i+1}</label><textarea class="missionVal">${x}</textarea></div>`).join("");
+$("peopleEdit").innerHTML=data.people.map((x,i)=>`<div class="listitem"><button class="smallbtn remove" onclick="data.people.splice(${i},1);fillForm()">Hapus</button><div class="row"><div><label>Nama</label><input class="pName" value="${esc(x[0])}"></div><div><label>Jabatan</label><input class="pRole" value="${esc(x[1])}"></div></div></div>`).join("");
+$("facilityEdit").innerHTML=data.facilities.map((x,i)=>`<div class="listitem"><button class="smallbtn remove" onclick="data.facilities.splice(${i},1);fillForm()">Hapus</button><div class="row"><div><label>Ikon</label><input class="fa" value="${esc(x[0])}"></div><div><label>Nama fasilitas</label><input class="fn" value="${esc(x[1])}"></div></div><label>Keterangan</label><textarea class="fd">${x[2]}</textarea></div>`).join("");
+$("newsEdit").innerHTML=data.news.map((x,i)=>`<div class="listitem"><button class="smallbtn remove" onclick="data.news.splice(${i},1);fillForm()">Hapus</button><div class="row"><div><label>Tanggal</label><input class="nd" value="${esc(x[0])}"></div><div><label>Judul</label><input class="nt" value="${esc(x[1])}"></div></div><label>Isi berita</label><textarea class="nx">${x[2]}</textarea></div>`).join("");
+$("galleryEdit").innerHTML=data.gallery.map((x,i)=>`<div class="listitem"><button class="smallbtn remove" onclick="data.gallery.splice(${i},1);fillForm()">Hapus</button><div class="row"><div><label>Nama file / alamat foto</label><input class="gi" value="${esc(x[0])}"></div><div><label>Keterangan</label><input class="gc" value="${esc(x[1])}"></div></div></div>`).join("");
+$("docsEdit").innerHTML=data.docs.map((x,i)=>`<div class="listitem"><button class="smallbtn remove" onclick="data.docs.splice(${i},1);fillForm()">Hapus</button><div class="row"><div><label>Ikon</label><input class="di" value="${esc(x[0])}"></div><div><label>Nama dokumen</label><input class="dt" value="${esc(x[1])}"></div></div><label>Keterangan</label><input class="dd" value="${esc(x[2])}"><label>File/link</label><input class="dl" value="${esc(x[3])}"></div>`).join("");
+}
+function esc(s){return String(s??"").replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;")}
+function collect(){
+["name","tagline","announcement","npsn","address","fullAddress","email","phone","maps","profileTitle","profile","vision"].forEach(k=>data[k]=val("f_"+k));
+data.mission=[...document.querySelectorAll(".missionVal")].map(x=>x.value);
+data.people=[...document.querySelectorAll("#peopleEdit .listitem")].map(x=>[x.querySelector(".pName").value,x.querySelector(".pRole").value]);
+data.facilities=[...document.querySelectorAll("#facilityEdit .listitem")].map(x=>[x.querySelector(".fa").value,x.querySelector(".fn").value,x.querySelector(".fd").value]);
+data.inventory=[ [val("i_total"),"Total Barang"],[val("i_good"),"Kondisi Baik"],[val("i_less"),"Kurang Baik"],[val("i_bad"),"Rusak Berat"] ];
+data.news=[...document.querySelectorAll("#newsEdit .listitem")].map(x=>[x.querySelector(".nd").value,x.querySelector(".nt").value,x.querySelector(".nx").value]);
+data.gallery=[...document.querySelectorAll("#galleryEdit .listitem")].map(x=>[x.querySelector(".gi").value,x.querySelector(".gc").value]);
+data.docs=[...document.querySelectorAll("#docsEdit .listitem")].map(x=>[x.querySelector(".di").value,x.querySelector(".dt").value,x.querySelector(".dd").value,x.querySelector(".dl").value]);
+}
+function saveData(){collect();localStorage.setItem("sdn2tuwed_data",JSON.stringify(data));render();alert("Perubahan berhasil disimpan di browser ini.");}
+function addMission(){data.mission.push("Tulis misi baru");fillForm()}function addPerson(){data.people.push(["Nama baru","Jabatan"]);fillForm()}function addFacility(){data.facilities.push(["🏫","Fasilitas baru","Keterangan fasilitas"]);fillForm()}function addNews(){data.news.push(["Tanggal","Judul berita baru","Isi berita"]);fillForm()}function addGallery(){data.gallery.push(["images/foto-baru.jpg","Foto baru"]);fillForm()}function addDoc(){data.docs.push(["📄","Dokumen baru","Keterangan dokumen","#"]);fillForm()}
+function exportBackup(){collect();let b=new Blob([JSON.stringify(data,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="backup-data-sdn-2-tuwed.json";a.click()}
+function importBackup(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{data=JSON.parse(r.result);fillForm();alert("Backup berhasil dipulihkan. Klik Simpan Perubahan.");}catch(err){alert("File backup tidak valid.")}};r.readAsText(f)}
+function resetData(){if(confirm("Kembalikan semua data ke contoh awal?")){data=structuredClone(DEFAULT);localStorage.removeItem("sdn2tuwed_data");fillForm();render()}}
+render();
+</script>
+</body>
+</html>

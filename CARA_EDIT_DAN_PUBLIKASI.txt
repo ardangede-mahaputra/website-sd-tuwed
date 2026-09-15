@@ -1,0 +1,34 @@
+WEBSITE SD NEGERI 2 TUWED
+CARA EDIT DAN PUBLIKASI
+
+1. EDIT DATA
+   - Buka file DATA_SEKOLAH.txt.
+   - Ganti teks setelah tanda ":" sesuai data sekolah.
+   - Simpan.
+
+2. GANTI FOTO
+   - Buka folder images.
+   - Ganti foto dengan nama file yang sama agar tampilan tetap aman.
+   - Sebaiknya gunakan JPG/PNG dan ukuran tidak terlalu besar.
+
+3. MELIHAT WEBSITE DI KOMPUTER
+   - Klik dua kali index.html.
+   - Website akan terbuka di browser.
+
+4. PUBLIKASI GRATIS
+   Cara yang paling mudah adalah GitHub Pages:
+   - Buat akun di https://github.com/
+   - Buat repository baru, misalnya: website-sd-tuwed
+   - Upload SELURUH ISI folder website ini (bukan file ZIP)
+   - Settings -> Pages
+   - Source: Deploy from a branch
+   - Branch: main dan folder: / (root)
+   - Simpan.
+   - GitHub akan memberikan alamat website yang dapat dibuka banyak orang.
+
+5. PENTING
+   - Jangan menghapus index.html.
+   - Jangan mengubah nama folder images jika index.html masih mengarah ke folder tersebut.
+   - Setelah perubahan di GitHub, tunggu sebentar sampai website diperbarui.
+
+Jika ingin domain sendiri seperti sdn2tuwed.sch.id, domain dapat dihubungkan kemudian.

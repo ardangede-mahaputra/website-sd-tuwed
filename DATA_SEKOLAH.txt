@@ -1,0 +1,42 @@
+DATA WEBSITE SD NEGERI 2 TUWED
+================================
+
+EDIT BAGIAN INI SAJA untuk mengganti informasi sekolah.
+
+NAMA SEKOLAH:
+SD NEGERI 2 TUWED
+
+ALAMAT:
+Tuwed, Kecamatan Melaya, Kabupaten Jembrana, Bali
+
+KODE POS:
+ISI DI SINI
+
+TELEPON:
+ISI DI SINI
+
+EMAIL:
+ISI DI SINI
+
+KEPALA SEKOLAH:
+ISI DI SINI
+
+VISI:
+ISI VISI SEKOLAH DI SINI
+
+MISI:
+1. ISI MISI PERTAMA
+2. ISI MISI KEDUA
+3. ISI MISI KETIGA
+
+TENTANG SEKOLAH:
+Tuliskan profil singkat SD Negeri 2 Tuwed di sini.
+
+LINK FACEBOOK:
+ISI DI SINI
+
+LINK YOUTUBE:
+ISI DI SINI
+
+CATATAN:
+Foto dapat diganti pada folder images.
